@@ -1,0 +1,111 @@
+<!DOCTYPE html5>
+<html>
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script src="student.js"></script>
+    <title>Northpark Now</title>
+  
+
+</head>
+<body id='background'>
+    <header class="site-header">
+      <nav class="navbar navbar-dark  fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="home.html">Northpark <STRONG>Now</STRONG> <img src="northpark.png"> </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">          
+                  <a class="nav-item nav-link" href= 'selector.html'>Student</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+      <div style="position: relative;
+                  top: 20px;">
+      <h2 class='create' style='color: white;'><center>Specify what <STRONG>you</STRONG> want</center></h2> 
+      </div>
+      <br>
+
+      <center>
+      <form method="Post">
+        <select style='color: black; 
+                        width: 200px; 
+                        height: 100px;
+                        position: relative;
+                        right: 20px;
+                        top: 40px;
+                        border-radius: 5%;'
+                        name=""
+                        multiple="3"
+                        id='genders'>
+          <option selected disabled value="gender">Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="all">All</option>
+        </select>
+
+        <select style="width: 200px;
+                       position: relative;
+                       top: 40px;
+                       border-radius: 5%;
+                       height: 100px;"
+                       name=""
+                       id='clubs'
+                       multiple>
+          <option selected disabled value="club">Clubs</option>
+          <option value="deca">DECA</option>
+          <option value="robotics">Robotics</option>
+          <option value="hosa">HOSA</option>
+          <option value="model un">Model UN</option>
+          <option value="all">All</option>
+        </select>
+
+        <select style='color: black; 
+                    width: 200px; 
+                    height: 100px;
+                    position: relative;
+                    left: 20px;
+                    top: 40px;
+                    border-radius: 5%;' 
+                    name="" id='grades' multiple>
+          <option selected disabled value="grade">Grade</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="all">All</option>
+        </select>
+      </form>
+      </center>
+
+      <br>
+      <center><input style='background-color: #0b2652; 
+                            color: white; 
+                            width: 200px; 
+                            height: 60px;
+                            position: relative;
+                            top: 30px;' 
+                            type="submit" 
+                            value="Go" 
+                            onclick="checker()">
+      </center>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>

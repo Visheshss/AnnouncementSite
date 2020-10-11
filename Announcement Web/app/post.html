@@ -1,0 +1,117 @@
+<!DOCTYPE html5>
+<html>
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="teacher.js"></script>
+
+        <title>Northpark Now</title>
+
+</head>
+<body id='background'>
+    <header class="site-header">
+      <nav class="navbar navbar-dark  fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="home.html">Northpark <STRONG>Now</STRONG> <img src="northpark.png"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">          
+                  <a class="nav-item nav-link" href= 'selector.html'>Student</a>
+                  <a class="nav-item nav-link" href="post.html">Teacher</a>
+                  <a class="nav-item nav-link" href="login.html">Login</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      
+	<center><div style="
+				width: 800px;
+				height: 590px;
+				border: 2px solid white;
+				border-radius:10%;"
+				>
+		<div>
+		<h1 style='color: white; position: relative; top: 10px;'class='create'><center>Create <STRONG>Announcment</STRONG></center></h1>
+	    </div>
+		<form method="Post">
+			  <center>Title</center><br>
+			  <center><textarea class='text' rows='1' cols='50' placeholder="Title" id='titles'></textarea></center>
+			  <br>
+			  <center>Body</center><br>
+			  <center><textarea class='text' rows="7" cols="60" placeholder="Body" id='bodies'></textarea></center>
+			  <br>
+			  <center>
+			  <select id='gender' multiple style=
+			  		    'background-color: white;
+			  			position: relative;
+			  			right: 25px;
+			  			 color: black;
+			  			 height: 80px;
+			  			 width: 175px;
+			  			 top: 2px;'
+			  			 name="Gender">
+			  	  <option selected disabled value="">Gender</option>
+				  <option value="male">Male</option>
+				  <option value="female">Female</option>
+				  <option value="all">All</option>
+			  </select>
+
+			  <select id = 'club' name="Clubs" multiple size="6" style="
+			  				height: 80px;
+			  				width: 175px;">
+			  	  <option selected disabled value="">Clubs</option>
+				  <option value="deca">DECA</option>
+				  <option value="robotics">Robotics</option>
+				  <option value="hosa">HOSA</option>
+				  <option value="model un">Model UN</option>
+				  <option value="all">All</option>
+			  </select>
+
+			  <select id='grade' multiple style='background-color: white;
+			  				 color: black;
+			  				 height: 80px;
+			  			 	 width: 175px;
+			  			 	 position: relative;
+			  				 left: 25px;
+			  				 top: 2px;'
+			  				 name="Grade">
+			  	  <option selected disabled value="">Grade</option>
+				  <option value="9">9</option>
+				  <option value="10">10</option>
+				  <option value="11">11</option>
+				  <option value="12">12</option>
+				  <option value="All">All</option>
+			  </select>
+			  </center>
+			  <br>
+		</form> 
+		<center>
+			  	<input style='background-color: #0b2652; 
+		  						color: white;
+		  						width:200px;
+		  						height: 50px;
+		  						position: absolute;
+		  						top: 600px;
+		  						left: 460px;'
+		  					    id='button' type="submit" onclick = 'post()' value="Post">
+		</center>
+	</div>
+</center>
+<br>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
